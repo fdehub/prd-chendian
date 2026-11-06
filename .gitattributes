@@ -1,0 +1,2 @@
+# Preserve signed bytes on all platforms, including Windows checkouts.
+* -text

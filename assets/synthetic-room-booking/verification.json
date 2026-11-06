@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "checks": [
+    "structure/contract references/requirement and case links",
+    "half-open interval and duration reference assertions"
+  ],
+  "notTested": [
+    "running API",
+    "database concurrency",
+    "production identity",
+    "performance"
+  ],
+  "dataOrigin": "synthetic"
+}

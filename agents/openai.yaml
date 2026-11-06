@@ -1,0 +1,4 @@
+interface:
+  display_name: "需求文档Skill"
+  short_description: "把想法或现有资料拆成可开发、可验收的PRD，审查修复后统一交付"
+  default_prompt: "使用 $prd-chendian，把这个项目的想法或现有资料整理成可实施、可验收的需求包，并审查修复跨模块缺口。"

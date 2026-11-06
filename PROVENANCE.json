@@ -1,0 +1,134 @@
+{
+  "format": "prd-skill-release-v1",
+  "release": {
+    "skillId": "prd-chendian",
+    "displayName": "需求文档Skill",
+    "author": "陈淀",
+    "homepage": "https://github.com/fdehub",
+    "repository": "https://github.com/fdehub/prd-chendian",
+    "version": "1.0.2",
+    "releasedAt": "2026-11-06",
+    "algorithm": "ECDSA-P256-SHA256-DER",
+    "publicKeySpkiBase64": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGOy0EqAR4SMs9y9hz8FkxU45VHyiyYiDioJ1eUXraBKRVxTWj45mmzYEAcD9PYZB1uiVwN0MHlzlGngAuOKPGw==",
+    "keyFingerprintSha256": "913ffa698c0a3cee8fccced7614636b26baf11cf610364dc4aba164b5442df6c",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "bytes": 79,
+        "sha256": "88ac0ea466eb3bd8ff4efe6cb98a274abb32d5971eda5bd2d2c7f16eab0002f3"
+      },
+      {
+        "path": ".gitignore",
+        "bytes": 76,
+        "sha256": "c589347e075e446f9d5b57615fbc287b0d1371c17f968715aaf8220ee4ac495a"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "bytes": 323,
+        "sha256": "b6b86107c61feba62fa4802d7adff3d3184524b8c26847c4ea08c70e3301ed83"
+      },
+      {
+        "path": "assets/synthetic-room-booking/check_examples.py",
+        "bytes": 385,
+        "sha256": "adc2b5a3eaf1e667fdf370fbff12e3d7bc80efa7ee58bfbbd386a2abd2ced23e"
+      },
+      {
+        "path": "assets/synthetic-room-booking/dictionary.md",
+        "bytes": 1481,
+        "sha256": "136fdf62898be464b8935f14afcb86f5fb26b35b485131c5f2e3451d9f5419b9"
+      },
+      {
+        "path": "assets/synthetic-room-booking/fixtures.json",
+        "bytes": 5932,
+        "sha256": "d0a45937e749dc51ce7b685013d44715fdd7751ea6804c5ac32cb7c7be5a4f7a"
+      },
+      {
+        "path": "assets/synthetic-room-booking/openapi.json",
+        "bytes": 31482,
+        "sha256": "a86683dc81a2825ac7584275f6d1229652509351551b6cf404d8aa4be22a0d19"
+      },
+      {
+        "path": "assets/synthetic-room-booking/prd.md",
+        "bytes": 5648,
+        "sha256": "9a6b4816874b9e8d6b1cf049762c05a18a595d9c2c358e7de48d5f8c767d2719"
+      },
+      {
+        "path": "assets/synthetic-room-booking/readme.md",
+        "bytes": 520,
+        "sha256": "121e346a66b7a9c30d91712efe9628ea600140b90050731e5f62b2f5fc5cf394"
+      },
+      {
+        "path": "assets/synthetic-room-booking/requirements-manifest.json",
+        "bytes": 8383,
+        "sha256": "fc943e0f95f141569533f74565aa159ac8ec91f69f8797b9f2c7765e89d283c5"
+      },
+      {
+        "path": "assets/synthetic-room-booking/review.md",
+        "bytes": 728,
+        "sha256": "94c6532447ed709ed793bc90356a14342b7fa6481520bb12ff2b9a01f24a6555"
+      },
+      {
+        "path": "assets/synthetic-room-booking/trace.md",
+        "bytes": 487,
+        "sha256": "e8d75fa232f2128ce83ff9469951b56d84be0b86bf7d8ca2ca84c1c90cb9e081"
+      },
+      {
+        "path": "assets/synthetic-room-booking/verification.json",
+        "bytes": 320,
+        "sha256": "247005a13761ac95e9f77de80b704f17b6ef5744c9ef9ad130e02ff1a9f4075e"
+      },
+      {
+        "path": "assets/synthetic-room-booking/wireframe.html",
+        "bytes": 2042,
+        "sha256": "84ae96ccd3a6550e403eef4819d1ebc59087fbd97cd5f7b9281959d4e9cf662b"
+      },
+      {
+        "path": "README.md",
+        "bytes": 2782,
+        "sha256": "e3d03e28b49e19feb4486eb7f3bd8237743f32eac09d62eeb3137d66dfa3e763"
+      },
+      {
+        "path": "references/bundle-manifest.md",
+        "bytes": 2596,
+        "sha256": "d3963a56461fb3a439a9fe2c9b943f15792c2cb763056ad3cb531b5d96a89f19"
+      },
+      {
+        "path": "references/deliverables.md",
+        "bytes": 4419,
+        "sha256": "f245518d704532128722fba5570e83e2f5e6ad2e8a40302ddbec5ef3e34650e6"
+      },
+      {
+        "path": "references/execution-contract.md",
+        "bytes": 4703,
+        "sha256": "4990a40ebe4308f50af4fe47e33dc53c4feaa5700e8b6b657e36323705958efb"
+      },
+      {
+        "path": "references/review-gates.md",
+        "bytes": 3184,
+        "sha256": "a6a3b19ff0da6086f7102c769927a50ecfe35d904dd100d61697fa56f3a492bf"
+      },
+      {
+        "path": "references/synthetic-example.md",
+        "bytes": 3034,
+        "sha256": "f3c83981d6a35104a28cc3474dc843616c412537eaab2e20753535225c549bc1"
+      },
+      {
+        "path": "scripts/validate_bundle.py",
+        "bytes": 8657,
+        "sha256": "7d72eb016e7bd83419bbec198270815cc7b32f00774d19573e87d4e6a84551b3"
+      },
+      {
+        "path": "scripts/verify_origin.mjs",
+        "bytes": 3900,
+        "sha256": "1dd6e7c0a93679005242ebd2f003c01d076fb9987bfa678dcaf4232c688970bc"
+      },
+      {
+        "path": "SKILL.md",
+        "bytes": 8909,
+        "sha256": "65f5ecd949e4e32ab5e425749ec94a8987e6e19f37bbb124528f918f4e303700"
+      }
+    ]
+  },
+  "signedPayloadBase64": "eyJhbGdvcml0aG0iOiJFQ0RTQS1QMjU2LVNIQTI1Ni1ERVIiLCJhdXRob3IiOiLpmYjmt4AiLCJkaXNwbGF5TmFtZSI6IumcgOaxguaWh+aho1NraWxsIiwiZmlsZXMiOlt7ImJ5dGVzIjo3OSwicGF0aCI6Ii5naXRhdHRyaWJ1dGVzIiwic2hhMjU2IjoiODhhYzBlYTQ2NmViM2JkOGZmNGVmZTZjYjk4YTI3NGFiYjMyZDU5NzFlZGE1YmQyZDJjN2YxNmVhYjAwMDJmMyJ9LHsiYnl0ZXMiOjc2LCJwYXRoIjoiLmdpdGlnbm9yZSIsInNoYTI1NiI6ImM1ODkzNDdlMDc1ZTQ0NmY5ZDViNTc2MTVmYmMyODdiMGQxMzcxYzE3Zjk2ODcxNWFhZjgyMjBlZTRhYzQ5NWEifSx7ImJ5dGVzIjozMjMsInBhdGgiOiJhZ2VudHMvb3BlbmFpLnlhbWwiLCJzaGEyNTYiOiJiNmI4NjEwN2M2MWZlYmE2MmZhNDgwMmQ3YWRmZjNkMzE4NDUyNGI4YzI2ODQ3YzRlYTA4YzcwZTMzMDFlZDgzIn0seyJieXRlcyI6Mzg1LCJwYXRoIjoiYXNzZXRzL3N5bnRoZXRpYy1yb29tLWJvb2tpbmcvY2hlY2tfZXhhbXBsZXMucHkiLCJzaGEyNTYiOiJhZGMyYjVhM2VhZjFlNjY3ZmRmMzcwZmJmZjEyZTNkN2JjODBlZmE3ZWU1OGJmYmJkMzg2YTJhYmQyY2VkMjNlIn0seyJieXRlcyI6MTQ4MSwicGF0aCI6ImFzc2V0cy9zeW50aGV0aWMtcm9vbS1ib29raW5nL2RpY3Rpb25hcnkubWQiLCJzaGEyNTYiOiIxMzZmZGY2Mjg5OGJlNDY0Yjg5MzVmMTRhZmNiODZmNWZiMjZiMzViNDg1MTMxYzVmMmUzNDUxZDlmNTQxOWI5In0seyJieXRlcyI6NTkzMiwicGF0aCI6ImFzc2V0cy9zeW50aGV0aWMtcm9vbS1ib29raW5nL2ZpeHR1cmVzLmpzb24iLCJzaGEyNTYiOiJkMGE0NTkzN2U3NDlkYzUxY2U3YjY4NTAxM2Q0NDcxNWZkZDc3NTFlYTY4MDRjNWFjMzJjYjdjN2JlNWE0ZjdhIn0seyJieXRlcyI6MzE0ODIsInBhdGgiOiJhc3NldHMvc3ludGhldGljLXJvb20tYm9va2luZy9vcGVuYXBpLmpzb24iLCJzaGEyNTYiOiJhODY2ODNkYzgxYTI4MjVhYzc1ODQyNzVmNmQxMjI5NjUyNTA5MzUxNTUxYjZjZjQwNGQ4YWE0YmUyMmEwZDE5In0seyJieXRlcyI6NTY0OCwicGF0aCI6ImFzc2V0cy9zeW50aGV0aWMtcm9vbS1ib29raW5nL3ByZC5tZCIsInNoYTI1NiI6IjlhNmI0ODE2ODc0YjllOGQ2YjFjZjA0OTc2MmMwNWExOGE1OTVkOWMyYzM1OGU3ZGU0OGQ1ZjhjNzY3ZDI3MTkifSx7ImJ5dGVzIjo1MjAsInBhdGgiOiJhc3NldHMvc3ludGhldGljLXJvb20tYm9va2luZy9yZWFkbWUubWQiLCJzaGEyNTYiOiIxMjFlMzQ2YTY2YjdhOWMzMGQ5MTcxMmVmZTk2MjhlYTYwMDE0MGI5MDA1MDczMWU1ZjYyYjJmNWZjNWNmMzk0In0seyJieXRlcyI6ODM4MywicGF0aCI6ImFzc2V0cy9zeW50aGV0aWMtcm9vbS1ib29raW5nL3JlcXVpcmVtZW50cy1tYW5pZmVzdC5qc29uIiwic2hhMjU2IjoiZmM5NDNlMGY5NWYxNDE1Njk1MzNmNzQ1NjVhYTE1OWFjOGVjOTFmNjlmODc5N2I5ZjJjNzc2NWU4OWQyODNjNSJ9LHsiYnl0ZXMiOjcyOCwicGF0aCI6ImFzc2V0cy9zeW50aGV0aWMtcm9vbS1ib29raW5nL3Jldmlldy5tZCIsInNoYTI1NiI6Ijk0YzY1MzI0NDdlZDcwOWVkNzkzYmM5MDM1NmExNDM0MmI3ZmE2NDgxNTIwYmIxMmZmMmI5YTAxZjI0YTY1NTUifSx7ImJ5dGVzIjo0ODcsInBhdGgiOiJhc3NldHMvc3ludGhldGljLXJvb20tYm9va2luZy90cmFjZS5tZCIsInNoYTI1NiI6ImU4ZDc1ZmEyMzJmMjEyOGNlODNmZjk0Njk5NTFiNTZkODRiZTBiODZiZjdkOGNhMmNhODRjMWM5MGNiOWUwODEifSx7ImJ5dGVzIjozMjAsInBhdGgiOiJhc3NldHMvc3ludGhldGljLXJvb20tYm9va2luZy92ZXJpZmljYXRpb24uanNvbiIsInNoYTI1NiI6IjI0NzAwNWExMzc2MWFjOTVlOWY3N2RlODBiNzA0ZjE3YjZlZjU3NDRjOWVmOWFkMTMwZTAyZmYxYTlmNDA3NWUifSx7ImJ5dGVzIjoyMDQyLCJwYXRoIjoiYXNzZXRzL3N5bnRoZXRpYy1yb29tLWJvb2tpbmcvd2lyZWZyYW1lLmh0bWwiLCJzaGEyNTYiOiI4NGFlOTZjY2QzYTY1NTBlNDAzZWVmNDgxOWQxZWJjNTkwODdmYmQ5N2NkNWY3YjkyODE5NTlkNGU5Y2Y2NjJiIn0seyJieXRlcyI6Mjc4MiwicGF0aCI6IlJFQURNRS5tZCIsInNoYTI1NiI6ImUzZDAzZTI4YjQ5ZTE5ZmViNDQ4NmViN2YzYmQ4MjM3NzQzZjMyZWFjMDlkNjJlZWIzMTM3ZDY2ZGZhM2U3NjMifSx7ImJ5dGVzIjoyNTk2LCJwYXRoIjoicmVmZXJlbmNlcy9idW5kbGUtbWFuaWZlc3QubWQiLCJzaGEyNTYiOiJkMzk2M2E1NjQ2MWZiM2E0MzlhOWZlMmM5Yjk0M2YxNTc5MmMyY2I3NjMwNTZhZDNjYjUzMWI1ZDk2YTg5ZjE5In0seyJieXRlcyI6NDQxOSwicGF0aCI6InJlZmVyZW5jZXMvZGVsaXZlcmFibGVzLm1kIiwic2hhMjU2IjoiZjI0NTUxOGQ3MDQ1MzIxMjg3MjJmYmE1NTcwZTgzZTJmNWU2YWQyZThhNDAzMDJkZGJlYzVlZjNlMzQ2NTBlNiJ9LHsiYnl0ZXMiOjQ3MDMsInBhdGgiOiJyZWZlcmVuY2VzL2V4ZWN1dGlvbi1jb250cmFjdC5tZCIsInNoYTI1NiI6IjQ5OTBhNDBlYmU0MzA4ZjUwYWY0ZmU0N2UzM2RjNTNjNGZlYWE1NzAwZThiNmI2NTdlMzYzMjM3MDU5NThlZmIifSx7ImJ5dGVzIjozMTg0LCJwYXRoIjoicmVmZXJlbmNlcy9yZXZpZXctZ2F0ZXMubWQiLCJzaGEyNTYiOiJhNmEzYjE5ZmYwZGE2MDg2ZjcxMDJjNzY5OTI3YTUwZWNmZTM1ZDkwNGRkMTAwZDYxNjk3ZmE1NmYzYTQ5MmJmIn0seyJieXRlcyI6MzAzNCwicGF0aCI6InJlZmVyZW5jZXMvc3ludGhldGljLWV4YW1wbGUubWQiLCJzaGEyNTYiOiJmM2M4Mzk4MWQ2YTM1MTA0YTI4Y2MzNDc0ZGM4NDM2MTZjNDEyNTM3ZWFhYjJlMjA3NTM1MzUyMjVjNTQ5YmMxIn0seyJieXRlcyI6ODY1NywicGF0aCI6InNjcmlwdHMvdmFsaWRhdGVfYnVuZGxlLnB5Iiwic2hhMjU2IjoiN2Q3MmViMDE2ZTdiZDgzNDE5YmJlYzE5ODI3MDgxNWNjN2IzMmYwMDc3NGQxOTU3M2U4N2Q0ZTZhODQ1NTFiMyJ9LHsiYnl0ZXMiOjM5MDAsInBhdGgiOiJzY3JpcHRzL3ZlcmlmeV9vcmlnaW4ubWpzIiwic2hhMjU2IjoiMWRkNmU3YzBhOTM2NzkwMDUyNDJlYmQyZjAwM2MwMWQwNzZmYjk5ODdiZmE2NzhkY2FmNDIzMmM2ODg5NzBiYyJ9LHsiYnl0ZXMiOjg5MDksInBhdGgiOiJTS0lMTC5tZCIsInNoYTI1NiI6IjY1ZjVlY2Q5NDllNGUzMmFiNWU0MjU3NDllYzk0YTg5ODdlNmUxOWYzN2JiYjEyNDUyOGY5MThmNGUzMDM3MDAifV0sImhvbWVwYWdlIjoiaHR0cHM6Ly9naXRodWIuY29tL2ZkZWh1YiIsImtleUZpbmdlcnByaW50U2hhMjU2IjoiOTEzZmZhNjk4YzBhM2NlZThmY2NjZWQ3NjE0NjM2YjI2YmFmMTFjZjYxMDM2NGRjNGFiYTE2NGI1NDQyZGY2YyIsInB1YmxpY0tleVNwa2lCYXNlNjQiOiJNRmt3RXdZSEtvWkl6ajBDQVFZSUtvWkl6ajBEQVFjRFFnQUVHT3kwRXFBUjRTTXM5eTloejhGa3hVNDVWSHlpeVlpRGlvSjFlVVhyYUJLUlZ4VFdqNDVtbXpZRUFjRDlQWVpCMXVpVndOME1IbHpsR25nQXVPS1BHdz09IiwicmVsZWFzZWRBdCI6IjIwMjYtMTEtMDYiLCJyZXBvc2l0b3J5IjoiaHR0cHM6Ly9naXRodWIuY29tL2ZkZWh1Yi9wcmQtY2hlbmRpYW4iLCJza2lsbElkIjoicHJkLWNoZW5kaWFuIiwidmVyc2lvbiI6IjEuMC4yIn0=",
+  "signatureBase64": "MEQCIAOUQvf/tYU6hTQ4M06utlw9mAD4EEMtKBh5683ViLvEAiBtg8VFnG5Pxc+tAIqP9HADcyjJpc1OBOCZd9JS6phzwQ=="
+}

@@ -1,0 +1,372 @@
+{
+  "version": "synthetic-1",
+  "scope": "full",
+  "status": "proposal",
+  "dataOrigin": "independently authored synthetic example; no customer source artifacts",
+  "artifacts": [
+    {
+      "role": "prd",
+      "path": "prd.md"
+    },
+    {
+      "role": "api",
+      "path": "openapi.json"
+    },
+    {
+      "role": "dictionary",
+      "path": "dictionary.md"
+    },
+    {
+      "role": "prototype",
+      "path": "wireframe.html"
+    },
+    {
+      "role": "trace",
+      "path": "trace.md"
+    },
+    {
+      "role": "fixtures",
+      "path": "fixtures.json"
+    },
+    {
+      "role": "review",
+      "path": "review.md"
+    },
+    {
+      "role": "verification",
+      "path": "verification.json"
+    },
+    {
+      "role": "readme",
+      "path": "readme.md"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "BOOK-01",
+      "phase": "P0",
+      "status": "proposed",
+      "pageIds": [
+        "page-room-list",
+        "page-availability"
+      ],
+      "operationIds": [
+        "room_list",
+        "room_availability"
+      ],
+      "localOnly": false,
+      "acceptanceIds": [
+        "CASE-01",
+        "CASE-02"
+      ]
+    },
+    {
+      "id": "BOOK-02",
+      "phase": "P0",
+      "status": "proposed",
+      "pageIds": [
+        "page-booking-form"
+      ],
+      "operationIds": [
+        "booking_create"
+      ],
+      "localOnly": false,
+      "acceptanceIds": [
+        "CASE-02",
+        "CASE-03",
+        "CASE-08",
+        "CASE-09"
+      ]
+    },
+    {
+      "id": "BOOK-03",
+      "phase": "P0",
+      "status": "proposed",
+      "pageIds": [
+        "page-my-bookings",
+        "page-booking-detail"
+      ],
+      "operationIds": [
+        "booking_list",
+        "booking_detail"
+      ],
+      "localOnly": false,
+      "acceptanceIds": [
+        "CASE-04"
+      ]
+    },
+    {
+      "id": "BOOK-04",
+      "phase": "P0",
+      "status": "proposed",
+      "pageIds": [
+        "page-booking-detail"
+      ],
+      "operationIds": [
+        "booking_cancel"
+      ],
+      "localOnly": false,
+      "acceptanceIds": [
+        "CASE-05",
+        "CASE-06"
+      ]
+    },
+    {
+      "id": "BOOK-05",
+      "phase": "P0",
+      "status": "proposed",
+      "pageIds": [
+        "page-room-admin"
+      ],
+      "operationIds": [
+        "room_state"
+      ],
+      "localOnly": false,
+      "acceptanceIds": [
+        "CASE-07"
+      ]
+    }
+  ],
+  "acceptanceCases": [
+    {
+      "id": "CASE-01",
+      "requirementIds": [
+        "BOOK-01"
+      ],
+      "given": {
+        "roomEnabled": true,
+        "existing": [],
+        "serverTime": "2035-01-01T08:00:00Z",
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "room_list"
+      },
+      "then": {
+        "httpStatus": 200,
+        "roomIds": [
+          "demo-room"
+        ]
+      }
+    },
+    {
+      "id": "CASE-02",
+      "requirementIds": [
+        "BOOK-01",
+        "BOOK-02"
+      ],
+      "given": {
+        "serverTime": "2035-01-01T08:00:00Z",
+        "existing": [
+          {
+            "startAt": "2035-01-01T10:00:00Z",
+            "endAt": "2035-01-01T11:00:00Z"
+          }
+        ],
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_create",
+        "startAt": "2035-01-01T11:00:00Z",
+        "endAt": "2035-01-01T11:30:00Z",
+        "input": {
+          "roomId": "demo-room",
+          "startAt": "2035-01-01T11:00:00Z",
+          "endAt": "2035-01-01T11:30:00Z",
+          "purpose": "fictional demo use"
+        }
+      },
+      "then": {
+        "httpStatus": 201,
+        "status": "active",
+        "activeCount": 2
+      }
+    },
+    {
+      "id": "CASE-03",
+      "requirementIds": [
+        "BOOK-02"
+      ],
+      "given": {
+        "serverTime": "2035-01-01T08:00:00Z",
+        "activeInterval": [
+          "2035-01-01T10:00:00Z",
+          "2035-01-01T11:00:00Z"
+        ],
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_create",
+        "startAt": "2035-01-01T10:45:00Z",
+        "endAt": "2035-01-01T11:15:00Z",
+        "input": {
+          "roomId": "demo-room",
+          "startAt": "2035-01-01T10:45:00Z",
+          "endAt": "2035-01-01T11:15:00Z",
+          "purpose": "fictional demo use"
+        }
+      },
+      "then": {
+        "httpStatus": 409,
+        "errorCode": "SLOT_CONFLICT",
+        "activeCount": 1
+      }
+    },
+    {
+      "id": "CASE-04",
+      "requirementIds": [
+        "BOOK-03"
+      ],
+      "given": {
+        "sessionOwner": "demo-member-a",
+        "bookingOwner": "demo-member-b",
+        "serverTime": "2035-01-01T08:00:00Z",
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_detail",
+        "id": "demo-booking"
+      },
+      "then": {
+        "httpStatus": 404,
+        "errorCode": "NOT_FOUND",
+        "personalFieldsReturned": false
+      }
+    },
+    {
+      "id": "CASE-05",
+      "requirementIds": [
+        "BOOK-04"
+      ],
+      "given": {
+        "startAt": "2035-01-01T10:00:00Z",
+        "status": "active",
+        "revision": 1,
+        "serverTime": "2035-01-01T09:00:00Z",
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_cancel",
+        "repeatCount": 2,
+        "input": {
+          "reason": "fictional cancellation"
+        }
+      },
+      "then": {
+        "httpStatus": 200,
+        "status": "cancelled",
+        "revision": 2,
+        "releaseCount": 1
+      }
+    },
+    {
+      "id": "CASE-06",
+      "requirementIds": [
+        "BOOK-04"
+      ],
+      "given": {
+        "startAt": "2035-01-01T10:00:00Z",
+        "status": "active",
+        "serverTime": "2035-01-01T10:00:00Z",
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_cancel",
+        "input": {
+          "reason": "fictional cancellation"
+        }
+      },
+      "then": {
+        "httpStatus": 409,
+        "errorCode": "CANCELLATION_WINDOW_CLOSED",
+        "status": "active"
+      }
+    },
+    {
+      "id": "CASE-07",
+      "requirementIds": [
+        "BOOK-05"
+      ],
+      "given": {
+        "role": "member",
+        "enabled": true,
+        "revision": 1,
+        "serverTime": "2035-01-01T08:00:00Z",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "room_state",
+        "enabled": false
+      },
+      "then": {
+        "httpStatus": 403,
+        "errorCode": "FORBIDDEN",
+        "enabled": true,
+        "revision": 1
+      }
+    },
+    {
+      "id": "CASE-08",
+      "requirementIds": [
+        "BOOK-02"
+      ],
+      "given": {
+        "existing": [],
+        "roomEnabled": true,
+        "serverTime": "2035-01-01T08:00:00Z",
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_create",
+        "parallelRequests": 2,
+        "sameInterval": true,
+        "differentIdempotencyKeys": true,
+        "input": {
+          "roomId": "demo-room",
+          "startAt": "2035-01-01T10:00:00Z",
+          "endAt": "2035-01-01T11:00:00Z",
+          "purpose": "fictional demo use"
+        }
+      },
+      "then": {
+        "created": 1,
+        "conflicted": 1,
+        "activeCount": 1
+      }
+    },
+    {
+      "id": "CASE-09",
+      "requirementIds": [
+        "BOOK-02"
+      ],
+      "given": {
+        "serverTime": "2035-01-01T08:00:00Z",
+        "role": "member",
+        "roomId": "demo-room"
+      },
+      "when": {
+        "operationId": "booking_create",
+        "unknownField": "ownerId",
+        "input": {
+          "roomId": "demo-room",
+          "startAt": "2035-01-01T10:00:00Z",
+          "endAt": "2035-01-01T11:00:00Z",
+          "purpose": "fictional demo use",
+          "ownerId": "demo-member-other"
+        }
+      },
+      "then": {
+        "httpStatus": 400,
+        "errorCode": "UNKNOWN_FIELD",
+        "newRecordCount": 0
+      }
+    }
+  ]
+}
