@@ -29,14 +29,3 @@ git clone https://github.com/fdehub/prd-chendian.git ~/.codex/skills/prd-chendia
 ## 示例与约束
 
 `SKILL.md`为入口，`references/`包含执行要求和完成门槛，`assets/synthetic-room-booking/`提供从零编写的虚构教学案例及正反示例。案例不包含真实客户需求、账号、截图、聊天或私有业务资料。
-
-Python 3校验工具：
-
-```bash
-python scripts/validate_bundle.py assets/synthetic-room-booking
-python assets/synthetic-room-booking/check_examples.py
-```
-
-校验只覆盖其声明的结构、引用和参考算例，不等于实际软件、数据库并发或生产接入已验收。该skill负责需求设计和文档交付，不自动开发或发布产品，不授权对外发送资料。
-
-作者署名仅针对skill，不自动添加到用户生成的需求文档中。
