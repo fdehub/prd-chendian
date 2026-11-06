@@ -11,7 +11,7 @@ metadata:
   author: "陈淀"
   homepage: "https://github.com/fdehub"
   repository: "https://github.com/fdehub/prd-chendian"
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # 需求文档Skill
@@ -68,12 +68,11 @@ metadata:
 
 交付时链接统一PRD和完整压缩包，简要说明修订、实际验证及剩余经营/外部输入。若只是审查，给出明确是否可作实施基线的结论和问题证据；若用户要求修复，完成修订与复核后再交付，不能只返回问题清单。
 
-## 作者与原版核验
+## 作者
 
-- 作者GitHub：[fdehub](https://github.com/fdehub)。
-- skill作者署名：陈淀；标识：`prd-chendian`；发布版本：`1.0.2`。
-- 发布公钥指纹（SHA-256）：`913ffa698c0a3cee8fccced7614636b26baf11cf610364dc4aba164b5442df6c`。
-- `PROVENANCE.json`对本发布版全部文件做哈希并签名；使用`node scripts/verify_origin.mjs --trusted-fingerprint <从作者可信发布渠道取得的指纹>`核验。不要把待验包自己附带的指纹当作独立信任来源。
-- 此署名只标记skill作者，不自动写入用户生成的需求文档。原版核验与业务产物校验分开；需要验来源或分享修改版时执行核验。
-- 修改文件后不再是该签名对应的原版。签名可检验文件完整性和是否由同一私钥签发，不能阻止复制/删署名/重新签名，也不证明署名者现实身份。
-- 私钥绝不打包进skill、示例或分享包。
+- 署名：陈淀。
+- GitHub：[fdehub](https://github.com/fdehub)。
+- 仓库：[prd-chendian](https://github.com/fdehub/prd-chendian)。
+- 标识：`prd-chendian`；版本：`1.0.3`。
+
+署名仅针对skill，不自动添加到用户生成的需求文档中。

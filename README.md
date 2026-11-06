@@ -39,14 +39,4 @@ python assets/synthetic-room-booking/check_examples.py
 
 校验只覆盖其声明的结构、引用和参考算例，不等于实际软件、数据库并发或生产接入已验收。该skill负责需求设计和文档交付，不自动开发或发布产品，不授权对外发送资料。
 
-## 原版核验
-
-需要Node.js，使用从作者可信发布渠道取得并独立核对的公钥指纹：
-
-```bash
-node scripts/verify_origin.mjs --trusted-fingerprint 913ffa698c0a3cee8fccced7614636b26baf11cf610364dc4aba164b5442df6c
-```
-
-`PROVENANCE.json`签名绑定发布文件；Git自身的根目录`.git`元数据不属于签名范围。其他新增、删除或修改的文件会导致原版核验失败。安装脚本产生的缓存请放在skill目录外，以保留原版文件集合。
-
-指纹仅从待验包本身读取不能独立确认来源；请通过作者发布记录核对。签名可核验同一发布密钥和文件完整性，不阻止复制改名，也不证明现实身份。私钥不在仓库和分享包中。署名针对skill，不自动写入用户的需求文档。
+作者署名仅针对skill，不自动添加到用户生成的需求文档中。
